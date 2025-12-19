@@ -1,26 +1,101 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.Welcome-Fullscreen{
+
+    background-color:pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.deco-bit{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #ff0000;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.deco-bit1{
+    top: 20px;
+    right: 20px;
+    border-left: none;
+    border-bottom: none;
+
+}
+
+.deco-bit2{
+    bottom: 20px;
+    left: 20px;
+    border-right: none;
+    border-top: none;
+
+}
+
+.welcomeHeader{
+    font-family:'EB Garamond', serif;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 2rem;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.image-container{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.persona-animation{
+
+
+}
+
+.welcome-text{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+
+}
+
+.start{
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    background-color: #FFA5A7;
+    border: 2px solid #E79191;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start:hover{
+    background-color: #ccc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.start:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
 }
